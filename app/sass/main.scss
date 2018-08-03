@@ -120,7 +120,8 @@
 
 
 .s-main {
-  background-image: url('../img/main-back.jpg');
+  background-image: url('../img/main-back.png');
+  background-color: rgba(#000, 0.4);
   flex-grow: 1;
 
   &__block {
@@ -128,7 +129,8 @@
   }
 
   &__title {
-    font-size: 34px;
+    // font-size: 34px;
+    font-size: 26px;
     margin: 0 0 35px 0;
     text-align: center;
     font-weight: bold;
