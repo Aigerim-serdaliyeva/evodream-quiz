@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Международное агентство интернет-маркетинга </title>
+  <meta name="description" content="Международное агентство интернет-маркетинга  ">
+  <meta name="keywords" content="Международное агентство интернет-маркетинга  ">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon.ico?v=11" type="image/x-icon">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body id="main-page">
+
+<form action="/mail.php" method="post">
+  <input type="hidden" name="info" value="Тест">
+
+  <div class="page-wrapper">
+
+    <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+    <a href="tel:+77772844461" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+
+          <h3 class="header__title d-none d-sm-block">
+            Международное агентство интернет-маркетинга  
+          </h3>
+
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+          </a>
+
+          <div class="header__block">
+            <div class="header__phone d-none d-lg-block">
+              <a href="tel:+77273573242" class="text-phone" id="phone_number">+7 (727) 357-32-42</a>
+              <a href="tel:+77772844461" class="text-phone" id="phone_number">+7 777 284-44-61</a>
+            </div>
+  
+            <a href="#" class="button d-none d-md-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
+          </div>          
+
+          <button class="hamburger hamburger--elastic hamburger--accessible">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <nav class="main-menu">
+          <div class="container">
+            <ul>
+              <!-- <li>
+                <a class="link" href="#main">Главная</a>
+              </li>
+              <li>
+                <a class="link" href="#service">Услуги</a>
+              </li>
+              <li class="last">
+                <a class="link" href="#contact">Контакты</a>
+              </li> -->
+              <li class="d-lg-none">
+                <a href="tel:+77273573242" class="text-phone" id="phone_number">+7 (727) 357-32-42</a>
+              </li>
+              <li class="d-lg-none">
+                <a href="tel:+77772844461" class="text-phone" id="phone_number">+7 777 284-44-61</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section s-main inverse" id="main">
+      <div class="container">
+        <div class="row s-main__block">
+          <h1 class="s-main__title">А вы знаете, какие методы продвижения принесут Вашему
+              бизнесу рост прибыли в 2 раза уже через 3 месяца?</h1>
+          
+          <div class="s-main__text">Ответьте на 5 вопросов теста и получите ответ!</div>
+
+          <button class="button button--quiz perehod" data-show="question1" data-hide="main">Начать тест</button>
+          <div class="grow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-question  d-none" id="question1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="question__img">
+              <img src="./img/question-1.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="question__title">Вопрос 1*</div>
+            <div class="question__text">К какой сфере относится Ваш бизнес?</div>
+
+            <input type="hidden" name="Вопрос1" value="К какой сфере относится Ваш бизнес?">
+            <div class="row question">
+              <div class="col-md-6">
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Потребительские товары" checked><span>Потребительские товары</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Услуги населению"><span>Услуги населению</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Строительство и ремонт"><span>Строительство и ремонт</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Оптовые продажи"><span>Оптовые продажи</span></label>
+              </div>
+              <div class="col-md-6">
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Услуги для бизнеса"><span>Услуги для бизнеса</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Развлекательные услуги"><span>Развлекательные услуги</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Другое"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
+              </div>
+            </div>
+            
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <a href="#" class="perehod" data-show="main" data-hide="question1">Вернуться назад</a>
+              </div>
+              <div class="col-sm-5">
+                <button class="button perehod" data-show="question2" data-hide="question1">Следующий вопрос</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-question d-none" id="question2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="question__img">
+              <img src="./img/question-2.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="question__title">Вопрос 2*</div>
+            <div class="question__text">Как долго Ваш бизнес на рынке?</div>
+
+            <input type="hidden" name="Вопрос2" value="Как долго Ваш бизнес на рынке?">
+            <div class="row question">
+              <div class="offset-md-1 col-md-9">
+                <label class="checkbox"><input type="radio" name="Ответ2" value="Начинающий бизнес" checked><span>Начинающий бизнес</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ2" value="От 6 месяцев до 2 лет"><span>От 6 месяцев до 2 лет</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ2" value="От 2-х до 10 лет"><span>От 2-х до 10 лет</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ2" value="Более 10 лет на рынке"><span>Более 10 лет на рынке</span></label>
+              </div>
+            </div>
+            
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <a href="#" class="perehod" data-show="question1" data-hide="question2">Редактировать предыдущий вопрос</a>
+              </div>
+              <div class="col-sm-5">
+                <button class="button perehod" data-show="question3" data-hide="question2">Следующий вопрос</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-question d-none" id="question3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="question__img">
+              <img src="./img/question-3.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="question__title">Вопрос 3*</div>
+            <div class="question__text">Какие способы привлечения клиентов Вы используете?</div>
+            <div class="question__info">(можно указать один или несколько вариантов)</div>
+
+            <input type="hidden" name="Вопрос3" value="Какие способы привлечения клиентов Вы используете?">
+            <div class="row question">
+              <div class="col-md-6">
+                <label class="checkbox"><input type="checkbox" name="Ответ3_1" value="Таргетированная реклама" checked><span>Таргетированная реклама</span></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_2" value="Реклама в социальных сетях"><span>Реклама в социальных сетях</span></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_3" value="Реклама на TV"><span>Реклама на TV</span></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_4" value="Реклама на радио"><span>Реклама на радио</span></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_5" value="Баннерная реклама по городу"><span>Баннерная реклама по городу</span></label>
+              </div>
+              <div class="col-md-6">
+                <label class="checkbox"><input type="checkbox" name="Ответ3_6" value="Холодные звонки"><span>Холодные звонки</span></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_7" value="Через знакомых"><span>Через знакомых</span></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_8" value="Другое"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_9" value="Не использую"><span>Не использую</span></label>
+              </div>
+            </div>
+            
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <a href="#" class="perehod" data-show="question2" data-hide="question3">Редактировать предыдущий вопрос</a>
+              </div>
+              <div class="col-sm-5">
+                <button class="button perehod" data-show="question4" data-hide="question3">Следующий вопрос</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-question d-none" id="question4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="question__img">
+              <img src="./img/question-4.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="question__title">Вопрос 4*</div>
+            <div class="question__text">Где Вы расположены?</div>
+
+            <input type="hidden" name="Вопрос4" value="Где Вы расположены?">
+            <div class="row question">
+              <div class="col-md-12">
+                <label class="checkbox"><input type="radio" name="Ответ4" value="г. Алматы" checked><span>г. Алматы</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ4" value="Другой регион Казахстана"><span>Другой регион Казахстана</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
+                <label class="checkbox"><input type="radio" name="Ответ4" value="Другая страна"><span>Другая страна</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
+              </div>
+            </div>
+            
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <a href="#" class="perehod" data-show="question3" data-hide="question4">Редактировать предыдущий вопрос</a>
+              </div>
+              <div class="col-sm-5">
+                <button class="button perehod" data-show="question5" data-hide="question4">Следующий вопрос</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-question d-none" id="question5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="question__img">
+              <img src="./img/question-5.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="question__title">Вопрос 5*</div>
+            <div class="question__text">Опишите свои собственные пожелания относительно продвижения</div>
+
+            <input type="hidden" name="Вопрос5" value="Опишите свои собственные пожелания относительно продвижения">
+            <div class="row question">
+              <div class="col-md-12">
+                <textarea class="textarea" name="Ответ5" placeholder="Введите текст"></textarea>
+              </div>
+            </div>
+            
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <a href="#" class="perehod" data-show="question4" data-hide="question5">Редактировать предыдущий вопрос</a>
+              </div>
+              <div class="col-sm-5">
+                <button class="button perehod" data-show="result" data-hide="question5">Следующий вопрос</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-result d-none" id="result">
+      <div class="container">
+        <h2 class="section-title">Для того, чтобы получить результаты теста, введите контактные данные</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="result__img">
+              <img src="./img/result.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="form form--vertical">
+              
+                <div class="form__title"></div>
+                <div class="form__content">
+                        
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Введите имя">
+                  </div>
+      
+                  <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+
+                  <div class="input-div">
+                    <input type="email" class="input" name="email" placeholder="Введите e-mail*" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+      
+                  <button class="button ajax-submit" type="submit" id="polu4it_rezultat">Получить результат</button>
+      
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer inverse">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__title"> © ТОО «КОРПОРАЦИЯ МАРКЕТИНГА» Все права защищены. Копирование материалов запрещено!</div>
+
+          <div class="footer__link">
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</form>
+
+  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+
+    <div class="form form--vertical">
+      <form action="/mail.php" method="post">
+        <div class="form__content">
+          <input type="hidden" name="info" value="Обратный звонок">
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Имя">
+          </div>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
+
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

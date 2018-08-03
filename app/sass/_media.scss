@@ -1,0 +1,223 @@
+
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .hamburger {
+    display: block;
+  }    
+
+  .header {
+    padding: 5px 0;
+  }
+
+  .footer {
+    text-align: center;
+
+    &__content {
+      flex-direction: column;
+
+      & > * {
+          margin: 0 0 20px 0 !important;            
+      }
+    }
+  }
+
+	.main-menu {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    top: 89px;
+    left: 0;
+    right: 0;
+    text-align: left;
+    margin-left: 0;
+    z-index: 98;
+    padding: 10px 0;
+
+		ul {
+			display: block;
+			height: auto;
+      padding: 0;
+      margin: 0;
+
+			li {
+        margin: 0 0 5px;
+
+        &:last-child {
+          margin: 0;
+        }
+			}
+		}
+  }    
+
+  .s {
+    
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {  
+
+  .form {
+    &--horizontal {
+      .form {
+        &__content {
+          flex-direction: column;
+          max-width: 500px;
+        } 
+        
+        &__info {
+          max-width: 500px;
+        }
+      }
+
+      .input-div {
+        margin-right: 0;
+      }  
+    }
+
+    &--vertical {
+      width: 100%;
+      max-width: none;
+    }
+
+    .input-div, .button {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .header {
+    .grow {
+      display: block;
+    }
+  }
+
+  .section {
+    &-title {
+      font-size: 24px;
+    }      
+  }
+
+
+  .s-main {
+    &__title {
+      font-size: 28px;
+    }
+  } 
+
+  .s-question {
+    .question {
+      &__img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .s-thanks {
+    &__img {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .call-me {
+    display: flex;
+  }
+
+  .s-main {
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .s-question {
+    .question {
+      &__text {
+        font-size: 17px;
+        margin-bottom: 20px;
+      }
+      &__info {
+        margin: -15px 0 20px 0;
+      }
+    }
+    .perehod {
+      margin-bottom: 20px;
+      display: block;
+    }
+    .button {
+      width: auto;
+      width: 100%;
+    }
+  }
+
+  .s {
+    &-thanks {
+      padding: 150px 0 50px;
+      
+      &__title {
+        font-size: 30px;
+      }
+
+      &__text {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+  
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+  .main-menu {
+		.container {
+			width: auto;
+			padding: 0;
+		}
+  }
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
