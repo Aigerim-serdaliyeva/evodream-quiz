@@ -7,7 +7,7 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  letter-spacing: -1px;
+  // letter-spacing: -1px;
 }
 
 
@@ -248,6 +248,18 @@
   }
 }
 
+.politika {
+  padding: 30px 20px;
+  &__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
+  p {
+    text-align: left;
+    margin: 0 0 10px;
+  }
+}
 
 @import './_media';

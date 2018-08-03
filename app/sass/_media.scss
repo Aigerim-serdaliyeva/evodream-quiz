@@ -34,7 +34,7 @@
     display: none;
     background-color: #fff;
     position: fixed;
-    top: 89px;
+    top: 66px;
     left: 0;
     right: 0;
     text-align: left;
@@ -190,6 +190,14 @@
         font-size: 16px;
         margin-bottom: 15px;
       }
+    }
+  }
+
+  .politika {
+    max-width: 90%;
+    padding: 25px 15px;
+    &__title {
+      font-size: 16px;
     }
   }
 }

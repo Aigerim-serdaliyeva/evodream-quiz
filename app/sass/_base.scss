@@ -509,6 +509,13 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
+  &__title {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
   &--small {
     max-width: 400px;
     padding: 60px 25px;
