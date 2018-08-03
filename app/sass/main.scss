@@ -180,10 +180,14 @@
     }
   }
 
+  a {
+    text-decoration: underline;
+  }
+
   .perehod {
     color: $accent;
     font-weight: 500;
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 
   .button {
