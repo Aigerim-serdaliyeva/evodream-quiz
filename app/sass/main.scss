@@ -180,6 +180,17 @@
       text-align: center;
       margin: -27px 0 32px 0;
     }
+
+    &__error {
+      color:red;
+      text-align: center;
+      margin-top: 15px;
+      opacity: 0;
+    }
+  }
+
+  &.has-error .question__error {
+    opacity: 1;
   }
 
   a {

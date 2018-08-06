@@ -81,7 +81,7 @@
       </div>
     </header>
 
-    <section class="section s-main" id="main">
+    <section class="section s-main " id="main">
       <div class="container">
         <div class="row s-main__block">
           <h1 class="s-main__title">А вы знаете, какие методы продвижения принесут Вашему
@@ -89,13 +89,13 @@
           
           <div class="s-main__text">Ответьте на 5 вопросов теста и получите ответ!</div>
 
-          <button class="button button--quiz perehod" data-show="question1" data-hide="main">Начать тест</button>
+          <a href="#" class="button button--quiz perehod" data-show="question1" data-hide="main">Начать тест</a>
           <div class="grow"></div>
         </div>
       </div>
     </section>
 
-    <section class="section s-question  d-none" id="question1">
+    <section class="section s-question d-none" id="question1">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
@@ -110,7 +110,7 @@
             <input type="hidden" name="Вопрос1" value="К какой сфере относится Ваш бизнес?">
             <div class="row question">
               <div class="col-md-6">
-                <label class="checkbox"><input type="radio" name="Ответ1" value="Потребительские товары" checked><span>Потребительские товары</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Потребительские товары"><span>Потребительские товары</span></label>
                 <label class="checkbox"><input type="radio" name="Ответ1" value="Услуги населению"><span>Услуги населению</span></label>
                 <label class="checkbox"><input type="radio" name="Ответ1" value="Строительство и ремонт"><span>Строительство и ремонт</span></label>
                 <label class="checkbox"><input type="radio" name="Ответ1" value="Оптовые продажи"><span>Оптовые продажи</span></label>
@@ -118,7 +118,7 @@
               <div class="col-md-6">
                 <label class="checkbox"><input type="radio" name="Ответ1" value="Услуги для бизнеса"><span>Услуги для бизнеса</span></label>
                 <label class="checkbox"><input type="radio" name="Ответ1" value="Развлекательные услуги"><span>Развлекательные услуги</span></label>
-                <label class="checkbox"><input type="radio" name="Ответ1" value="Другое"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
+                <label class="checkbox"><input type="radio" name="Ответ1" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
               </div>
             </div>
             
@@ -127,8 +127,11 @@
                 <a href="#" class="perehod" data-show="main" data-hide="question1">Вернуться назад</a>
               </div>
               <div class="col-sm-5">
-                <button class="button perehod" data-show="question2" data-hide="question1">Следующий вопрос</button>
+                <a href="#" class="button perehod" data-show="question2" data-hide="question1" data-type="next">Следующий вопрос</a>
               </div>
+            </div>
+            <div class="question__error">
+                Выберите один из вариантов
             </div>
           </div>
         </div>
@@ -150,7 +153,7 @@
             <input type="hidden" name="Вопрос2" value="Как долго Ваш бизнес на рынке?">
             <div class="row question">
               <div class="offset-md-1 col-md-9">
-                <label class="checkbox"><input type="radio" name="Ответ2" value="Начинающий бизнес" checked><span>Начинающий бизнес</span></label>
+                <label class="checkbox"><input type="radio" name="Ответ2" value="Начинающий бизнес"><span>Начинающий бизнес</span></label>
                 <label class="checkbox"><input type="radio" name="Ответ2" value="От 6 месяцев до 2 лет"><span>От 6 месяцев до 2 лет</span></label>
                 <label class="checkbox"><input type="radio" name="Ответ2" value="От 2-х до 10 лет"><span>От 2-х до 10 лет</span></label>
                 <label class="checkbox"><input type="radio" name="Ответ2" value="Более 10 лет на рынке"><span>Более 10 лет на рынке</span></label>
@@ -162,8 +165,11 @@
                 <a href="#" class="perehod" data-show="question1" data-hide="question2">Редактировать предыдущий вопрос</a>
               </div>
               <div class="col-sm-5">
-                <button class="button perehod" data-show="question3" data-hide="question2">Следующий вопрос</button>
+                <a href="#" class="button perehod" data-show="question3" data-hide="question2" data-type="next">Следующий вопрос</a>
               </div>
+            </div>
+            <div class="question__error">
+                Выберите один из вариантов
             </div>
           </div>
         </div>
@@ -186,7 +192,7 @@
             <input type="hidden" name="Вопрос3" value="Какие способы привлечения клиентов Вы используете?">
             <div class="row question">
               <div class="col-md-6">
-                <label class="checkbox"><input type="checkbox" name="Ответ3_1" value="Таргетированная реклама" checked><span>Таргетированная реклама</span></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_1" value="Таргетированная реклама"><span>Таргетированная реклама</span></label>
                 <label class="checkbox"><input type="checkbox" name="Ответ3_2" value="Реклама в социальных сетях"><span>Реклама в социальных сетях</span></label>
                 <label class="checkbox"><input type="checkbox" name="Ответ3_3" value="Реклама на TV"><span>Реклама на TV</span></label>
                 <label class="checkbox"><input type="checkbox" name="Ответ3_4" value="Реклама на радио"><span>Реклама на радио</span></label>
@@ -195,7 +201,7 @@
               <div class="col-md-6">
                 <label class="checkbox"><input type="checkbox" name="Ответ3_6" value="Холодные звонки"><span>Холодные звонки</span></label>
                 <label class="checkbox"><input type="checkbox" name="Ответ3_7" value="Через знакомых"><span>Через знакомых</span></label>
-                <label class="checkbox"><input type="checkbox" name="Ответ3_8" value="Другое"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
+                <label class="checkbox"><input type="checkbox" name="Ответ3_8" class="drugoe" value="Другое"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
                 <label class="checkbox"><input type="checkbox" name="Ответ3_9" value="Не использую"><span>Не использую</span></label>
               </div>
             </div>
@@ -205,8 +211,11 @@
                 <a href="#" class="perehod" data-show="question2" data-hide="question3">Редактировать предыдущий вопрос</a>
               </div>
               <div class="col-sm-5">
-                <button class="button perehod" data-show="question4" data-hide="question3">Следующий вопрос</button>
+                <a href="#" class="button perehod" data-show="question4" data-hide="question3" data-type="next">Следующий вопрос</a>
               </div>
+            </div>
+            <div class="question__error">
+                Выберите один из вариантов
             </div>
           </div>
         </div>
@@ -228,9 +237,9 @@
             <input type="hidden" name="Вопрос4" value="Где Вы расположены?">
             <div class="row question">
               <div class="col-md-12">
-                <label class="checkbox"><input type="radio" name="Ответ4" value="г. Алматы" checked><span>г. Алматы</span></label>
-                <label class="checkbox"><input type="radio" name="Ответ4" value="Другой регион Казахстана"><span>Другой регион Казахстана</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
-                <label class="checkbox"><input type="radio" name="Ответ4" value="Другая страна"><span>Другая страна</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
+                <label class="checkbox"><input type="radio" name="Ответ4" value="г. Алматы"><span>г. Алматы</span></label>
+                <label class="checkbox"><input type="radio" class="drugoe" name="Ответ4" value="Другой регион Казахстана"><span>Другой регион Казахстана</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
+                <label class="checkbox"><input type="radio" class="drugoe" name="Ответ4" value="Другая страна"><span>Другая страна</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
               </div>
             </div>
             
@@ -239,8 +248,11 @@
                 <a href="#" class="perehod" data-show="question3" data-hide="question4">Редактировать предыдущий вопрос</a>
               </div>
               <div class="col-sm-5">
-                <button class="button perehod" data-show="question5" data-hide="question4">Следующий вопрос</button>
+                <a href="#" class="button perehod" data-show="question5" data-hide="question4"  data-type="next">Следующий вопрос</a>
               </div>
+            </div>
+            <div class="question__error">
+                Выберите один из вариантов
             </div>
           </div>
         </div>
@@ -271,8 +283,11 @@
                 <a href="#" class="perehod" data-show="question4" data-hide="question5">Редактировать предыдущий вопрос</a>
               </div>
               <div class="col-sm-5">
-                <button class="button perehod" data-show="result" data-hide="question5">Следующий вопрос</button>
+                <a href="#" class="button perehod" data-show="result" data-hide="question5" data-type="next">Следующий вопрос</a>
               </div>
+            </div>
+            <div class="question__error">
+                Выберите один из вариантов
             </div>
           </div>
         </div>

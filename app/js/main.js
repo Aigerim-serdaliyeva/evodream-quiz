@@ -161,10 +161,44 @@ $(document).ready(function () {
   });
 
   $(".perehod").click(function() {
+    var $this = $(this);
+
     var $show = $("#" + $(this).data("show"));
     var $hide = $("#" + $(this).data("hide"));
+
+    if ($this.data("type") == "next") {
+      var $question = $this.closest(".s-question");
+      var variantSelected = false;
+      var drugoeSelected = false;
+
+      var $variants = $question.find('.checkbox input:first-child');
+      $variants.each(function() {
+        var $input = $(this);
+        if ($input.prop('checked')) {
+          if ($input.hasClass("drugoe")) {
+            drugoeSelected = true;
+            var vawVariant = $input.siblings(".ukazat").val();
+            if (vawVariant && vawVariant.length > 0) {
+              variantSelected = true;
+            }
+          } else {
+            variantSelected = true;
+          }
+        }
+      });  
+
+      if ($variants.length > 0 && !variantSelected) {
+        var errorText = drugoeSelected ? "Укажите ваш вариант" : "Выберите один из вариантов";
+        $question.addClass("has-error");
+        $question.find(".question__error").html(errorText);
+        return;
+      }
+    }
+
     $show.removeClass("d-none");
     $hide.addClass("d-none");
+
+
   });
 
   $(".carousel-certificates").owlCarousel({
